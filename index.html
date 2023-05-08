@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundVibe</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Merriweather:wght@300;400;700&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">  
+
+</head>
+
+<body>
+    <!-- Xóa header__fixed và div cha -->
+    <div style="height: 66px;">
+        <div class="header header-fixed">
+            <div class="grid">
+                <nav class="header__navbar">
+                    <div class="header__left">
+                        <a href="index.html" class="header__left-name">
+                            <h3>SoundVibe</h3>
+                        </a>
+                        <div class="header__left-search">
+                            <i class="fa-solid fa-magnifying-glass header__left-search--icon"></i>
+                            <input type="text" class="header__left-search--input" placeholder="Tìm kiếm">
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <ul class="header__right-list">
+                            <li class="header__right-item">
+                                <a href="home.html" class="header__right-item-link">
+                                    <i class="fa-solid fa-house header__right-item-link--icon"></i>
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li id="notification" class="header__right-item header__right-item--notify">
+                                <span class="header__right-item--notify-qtn">4</span>
+                                <i class="fa-sharp fa-regular fa-bell header__right-item-link--icon"></i>
+                                Thông báo
+                                <div id="notification__hide" class="header__notify">
+                                    <header class="header__notify-header">
+                                        <img src="img/notify.png" alt="" class="header__notify-header--img">
+                                        <h3>Mới</h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item">
+                                            <img src="img/music.png" alt="" class="header__notify-item--img">
+                                            <div class="header__notify-item--content">
+                                                <span class="header__notify-item--content-big">Live events this week</span>
+                                                <span class="header__notify-item--content-small">Don't miss out on the
+                                                    hottest concerts and festivals happening in your city, featuring top
+                                                    performers and local talent.</span>
+                                            </div>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <img src="img/podcast.png" alt="" class="header__notify-item--img">
+                                            <div class="header__notify-item--content">
+                                                <span class="header__notify-item--content-big">Podcast highlights</span>
+                                                <span class="header__notify-item--content-small">Get to know your favorite
+                                                    artists on a deeper level with exclusive interviews, behind-the-scenes
+                                                    footage, and fan Q&A sessions.</span>
+                                            </div>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <img src="img/spotlight.png" alt="" class="header__notify-item--img">
+                                            <div class="header__notify-item--content">
+                                                <span class="header__notify-item--content-big">Artist spotlights</span>
+                                                <span class="header__notify-item--content-small">Don't miss out on the
+                                                    hottest concerts and festivals happening in your city, featuring top
+                                                    performers and local talent.</span>
+                                            </div>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <img src="img/medal.png" alt="" class="header__notify-item--img">
+                                            <div class="header__notify-item--content">
+                                                <span class="header__notify-item--content-big">The best of June</span>
+                                                <span class="header__notify-item--content-small">From catchy pop hits to
+                                                    soulful ballads, we've got you covered with the latest and greatest
+                                                    music releases of the month.</span>
+                                            </div>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <img src="img/music.png" alt="" class="header__notify-item--img">
+                                            <div class="header__notify-item--content">
+                                                <span class="header__notify-item--content-big">Live events this week</span>
+                                                <span class="header__notify-item--content-small">Don't miss out on the
+                                                    hottest concerts and festivals happening in your city, featuring top
+                                                    performers and local talent.</span>
+                                            </div>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <img src="img/podcast.png" alt="" class="header__notify-item--img">
+                                            <div class="header__notify-item--content">
+                                                <span class="header__notify-item--content-big">Podcast highlights</span>
+                                                <span class="header__notify-item--content-small">Get to know your favorite
+                                                    artists on a deeper level with exclusive interviews, behind-the-scenes
+                                                    footage, and fan Q&A sessions.</span>
+                                            </div>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <img src="img/spotlight.png" alt="" class="header__notify-item--img">
+                                            <div class="header__notify-item--content">
+                                                <span class="header__notify-item--content-big">Artist spotlights</span>
+                                                <span class="header__notify-item--content-small">Don't miss out on the
+                                                    hottest concerts and festivals happening in your city, featuring top
+                                                    performers and local talent.</span>
+                                            </div>
+                                        </li>
+                                        <li class="header__notify-item">
+                                            <img src="img/medal.png" alt="" class="header__notify-item--img">
+                                            <div class="header__notify-item--content">
+                                                <span class="header__notify-item--content-big">The best of June</span>
+                                                <span class="header__notify-item--content-small">From catchy pop hits to
+                                                    soulful ballads, we've got you covered with the latest and greatest
+                                                    music releases of the month.</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <footer class="header__notify-footer"></footer>
+                                </div>
+                            </li>
+                            <li id="language" class="header__right-item header__right-item--language ">
+                                Tiếng Việt
+                                <i class="fa-solid fa-angle-down header__right-item-link--icon"></i>
+                                <div id="language__hide" class="header__language">
+                                    <!-- check hide: header__language-list--check-hide -->
+                                    <div class="header__language-list">
+                                        <i class="header__language-list--check fa-sharp fa-solid fa-check"></i>
+                                        <img src="img/vietnamese.png" alt="VietNam" class="header__language-list-img">
+                                        <h3 class="header__language-list-name">Tiếng Việt</h3>
+                                    </div>
+                                    <div class="header__language-list">
+                                        <i
+                                            class="header__language-list--check header__language-list--check-hide fa-sharp fa-solid fa-check"></i>
+                                        <img src="img/english.jpg" alt="English" class="header__language-list-img">
+                                        <h3 class="header__language-list-name">English</h3>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- <li class="header__right-item">
+                                <a href="https://www.tiktok.com" target="_blank" class="header__right-item-link">
+                                    <i
+                                        class="fa-brands fa-tiktok header__right-item-link--icon header__right-item-link-social"></i>
+                                </a>
+                            </li>
+                            <li class="header__right-item header__right-item--space">
+                                <a href="https://www.instagram.com" target="_blank" class="header__right-item-link">
+                                    <i
+                                        class="fa-brands fa-instagram header__right-item-link--icon header__right-item-link-social"></i>
+                                </a>
+                            </li> -->
+                            <li class="header__right-item">
+                                <a href="login.html" class="header__right-item-link">
+                                    <i class="fa-solid fa-right-to-bracket header__right-item-link--icon"></i>
+                                    Đăng nhập
+                                </a>
+                            </li>
+                            <li class="header__right-item ">
+                                <a href="register.html" class="header__right-item-link">
+                                    <button class="header__right-item-link--join-btn">Join</button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="grid__row app__content">
+                <div class="grid__column-2">
+                    <nav class="category">
+                            <h3 class="category-title">
+                                <i class="category-icon fa-solid fa-bars"></i>
+                                Danh mục nhạc
+                            </h3>
+    
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Thư viện</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link category-item__link--ative">Khám phá</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link category-item__link-live">
+                                        Radio
+                                        <img src="img/live.png" alt="Live" class="category-item__link-img-live">
+                                    </a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Đang theo dõi</a>
+                                </li>
+                                <li class="category-item">
+                                    <span class="category-item__separate"></span>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Playlist mới</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Top 100</a>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-item__link">Chủ đề và thể loại</a>
+                                </li>
+                            </ul>
+                    </nav>
+                </div>
+                <div class="grid__column-10">
+                    <div class="home-poster">
+                        <div class="grid__row">
+                            <div class="grid__column-4">
+                                <a href="#" class="home-poster__link">
+                                    <img src="https://thumbs.dreamstime.com/b/musical-performance-stage-recreation-music-show-live-concert-guitarist-band-background-night-entertainment-festival-events-137312058.jpg" alt="" class="home-poster__link-img">
+                                </a>
+                            </div>
+                            <div class="grid__column-4">
+                                <a href="#" class="home-poster__link">
+                                    <img src="https://media.istockphoto.com/id/1199243596/photo/concert-stage-on-rock-festival-music-instruments-silhouettes.jpg?s=612x612&w=0&k=20&c=BNqLID7OXEA9SI0znQNQ2K9ywQ0vdVL_0Pf0piOH8I4=" alt="" class="home-poster__link-img">
+                                </a>
+                            </div>
+                            <div class="grid__column-4">
+                                <a href="#" class="home-poster__link">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/56e1b9223c44d863de2e2321/1509386737790-QCUNS4ZG6ELNS8LZ9IZB/Common+Kings+Ponte+Vedra+2017.jpg" alt="" class="home-poster__link-img">
+                                </a>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+                    <div class="home-poster-dot">
+                        <ul class="home-poster-dot-list">
+                            <li class="home-poster-dot-item home-poster-dot-item--active">.</li>
+                            <li class="home-poster-dot-item">.</li>
+                            <li class="home-poster-dot-item">.</li>
+                        </ul>
+                    </div>
+
+                    <div class="home-title">
+                        <h2 class="home-title__name">Bảng Xếp Hạng</h2>
+                    </div>
+
+                    <div class="home-rank">
+                        <ul class="home-rank__chart-list">
+                            <li class="home-rank__chart-item home-rank__chart-item--1" style="--percent:80%;">
+                                <img src="img/top1.png" alt="" class="home-rank__chart-rank-img">
+                                <div class="home-new-song__play">
+                                    <div class="home-new-song__play-img" style="background-image: url(data:image/jpeg;base64,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);"></div>
+                                    <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                </div>
+                                <div class="home-rank__chart-content">
+                                    <div class="home-rank__chart-name">Cupid</div>
+                                    <div class="home-new-song__content-singer">
+                                        <a href="#" class="home-new-song__content-singer-link">FIFTY FIFTY</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="home-rank__chart-item home-rank__chart-item--2" style="--percent:75%;">
+                                <img src="img/top2.png" alt="" class="home-rank__chart-rank-img">
+                                <div class="home-new-song__play">
+                                    <div class="home-new-song__play-img" style="background-image: url(https://i.ytimg.com/vi/caoxaO_nKFU/maxresdefault.jpg);"></div>
+                                    <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                </div>
+                                <div class="home-rank__chart-content">
+                                    <div class="home-rank__chart-name">Về với em</div>
+                                    <div class="home-new-song__content-singer">
+                                        <a href="#" class="home-new-song__content-singer-link">Võ Hạ Trâm</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="home-rank__chart-item home-rank__chart-item--3" style="--percent:55%;">
+                                <img src="img/top3.png" alt="" class="home-rank__chart-rank-img">
+                                <div class="home-new-song__play">
+                                    <div class="home-new-song__play-img" style="background-image: url(https://i.ytimg.com/vi/rxBsiVhK2Aw/maxresdefault.jpg);"></div>
+                                    <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                </div>
+                                <div class="home-rank__chart-content">
+                                    <div class="home-rank__chart-name">Ez papa</div>
+                                    <div class="home-new-song__content-singer">
+                                        <a href="#" class="home-new-song__content-singer-link">JustaTee</a>,
+                                        <a href="#" class="home-new-song__content-singer-link">Cici Anh Chi</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="home-title">
+                        <h2 class="home-title__name">Mới phát hành</h2>
+                        <div class="home-title__filter">
+                            <button class="home-title__filter-btn home-title__filter-btn--active">Tất cả</button>
+                            <button class="home-title__filter-btn">Việt Nam</button>
+                            <button class="home-title__filter-btn">Quốc tế</button>
+                            <a href="#" class="home-title__filter-all">
+                                Tất cả
+                                <i class="home-title__filter-all-icon fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home-new-song">
+                        <div class="grid__row">
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.ytimg.com/vi/pNcsFb4VWWI/maxresdefault.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">Anh chưa thương em đến vậy đâu</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">Lady Mây</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">Hôm qua</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.pinimg.com/236x/77/b8/f5/77b8f555261ee40afb7b04fd0ab71293.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">Eye For An Eye (Single from John Wick: Chapter 4 Original Motion Picture SoundTrack)</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">Rina Sawayama</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">3 Ngày trước</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.ytimg.com/vi/75PPdm1hTzQ/maxresdefault.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">Kìa bóng dáng ai</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">Pháo</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">3 ngày trước</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.ytimg.com/vi/CHw1b_1LVBA/maxresdefault.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">Waiting for you</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">MONO</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">2 ngày trước</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.pinimg.com/236x/4a/a5/08/4aa508558794fb935104212f9d911847.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">Love Again (from the Motion Picture SoundTrack)</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">Céline Dion </a>
+                                        </div>
+                                        <span class="home-new-song__content-time">5 ngày trước</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.pinimg.com/236x/b1/d2/c3/b1d2c3d6e23ca5858028717a8310cec4.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">Giddy</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">Kep1er</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">4 ngày trước</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.pinimg.com/236x/b3/4a/4c/b34a4c1375df05e5f8351a14b7fc58dc.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">Never felt so alone</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">Labrinth</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">3 ngày trước</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.pinimg.com/236x/e8/a8/8f/e8a88ff48283b4c8367cedd73d7946ba.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">Đôi mắt biết nói dối</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">CeCe Trương</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">1 tuần trước</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.ytimg.com/vi/NPWJVZbrKm0/maxresdefault.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">iu là đây</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">Sean</a>,
+                                            <a href="#" class="home-new-song__content-singer-link">Muội</a>,
+                                            <a href="#" class="home-new-song__content-singer-link">Anfang</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">5 ngày trước</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.scdn.co/image/ab67616d0000b27330c28147b4311ead91dcc243);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">Chuyện chúng ta sau này</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">Hải Đăng Doo</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">Hôm qua</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.pinimg.com/236x/5e/4b/4b/5e4b4beecce38924a3930230c76a4322.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">A Thousand Years</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">James Arthur</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">2 tuần trước</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                            <div class="grid__column-4">
+                                <div class="home-new-song__wrap">
+                                    <div class="home-new-song__play">
+                                        <div class="home-new-song__play-img" style="background-image: url(https://i.pinimg.com/236x/d9/af/63/d9af63006066884534089e9565808fb6.jpg);"></div>
+                                        <i class="home-new-song__play-icon fa-solid fa-play"></i>
+                                    </div>
+                                    
+                                    <div class="home-new-song__content">
+                                        <h3 class="home-new-song__content-title">Tình em là đại dương</h3>
+                                        <div class="home-new-song__content-singer">
+                                            <a href="#" class="home-new-song__content-singer-link">Cầm</a>,
+                                            <a href="#" class="home-new-song__content-singer-link">Duy Mạnh</a>
+                                        </div>
+                                        <span class="home-new-song__content-time">1 tuần trước</span>
+                                    </div>
+                                    <div class="home-new-song__more">
+                                        <a href="#" class="home-new-song__more-link">...</a>
+                                    </div>
+                                </div>                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-title">
+                        <h2 class="home-title__name">Tâm Trạng</h2>
+                        <a href="#" class="home-title__filter-all home-title__filter-all-other">
+                            Tất cả
+                            <i class="home-title__filter-all-icon fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="home-playlist">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.pinimg.com/564x/72/ed/45/72ed45dfe0af618f45de4b688ad0c543.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <span class="home-playlist__content-descript">
+                                            Xem xét, suy ngẫm và cảm nhận sâu sắc hơn về cuộc sống
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.pinimg.com/236x/b2/48/5f/b2485fd553472e35f5d82261c8746a21.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <span class="home-playlist__content-descript">
+                                            Gợi lại những kỷ niệm hoặc tình cảm trong quá khứ, giúp bạn cảm thấy thoải mái hơn và đối mặt với những điều tiêu cực trong cuộc sống
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.pinimg.com/236x/2c/62/38/2c62380f1a74242d743554bdb27ee305.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <span class="home-playlist__content-descript">
+                                            Thư giãn và xua tan nỗi buồn
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.pinimg.com/236x/93/03/4e/93034e880a2d8702131ce866318941f6.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <span class="home-playlist__content-descript">
+                                            Giai điệu tĩnh lặng, thấm vào lòng người nghe và mang lại cảm giác ấm áp trong tâm hồn
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.pinimg.com/236x/d2/ec/2f/d2ec2feef95a77dd8603fd4322e50e19.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <span class="home-playlist__content-descript">
+                                            Sâu lắng, thể hiện những tình cảm, suy nghĩ, và những điều bất hạnh của cuộc đời
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-title">
+                        <h2 class="home-title__name">Chill</h2>
+                        <a href="#" class="home-title__filter-all home-title__filter-all-other">
+                            Tất cả
+                            <i class="home-title__filter-all-icon fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="home-playlist">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.pinimg.com/564x/bd/32/a4/bd32a488573ba881b36a1c26f9c03e43.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <span class="home-playlist__content-descript">
+                                            Đắm mình vào không gian âm nhạc
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.pinimg.com/236x/fe/e0/93/fee093ca837ee197f4ad5cc29d14f9bc.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <span class="home-playlist__content-descript">
+                                            Mang đến sự bình yên và trò chuyện cùng cảm xúc
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.pinimg.com/236x/74/15/2b/74152bed10b5f91c37d8504f47c6f23b.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <span class="home-playlist__content-descript">
+                                            Cảm nhận những âm hưởng màu trầm, những giai điệu êm dịu
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.pinimg.com/236x/f7/bc/65/f7bc65bdf5e33c714466c9cadc365ede.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <span class="home-playlist__content-descript">
+                                            Tìm lại sự bình yên và sự tự do trong tâm hồn
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.pinimg.com/236x/75/d2/d3/75d2d339ed0ad8c44ef6fceda9ee5ed4.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <span class="home-playlist__content-descript">
+                                            Giải toả căng thẳng và tìm lại sự cân bằng trong cuộc sống
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-title">
+                        <h2 class="home-title__name">Nghệ Sĩ Nổi Bật</h2>
+                        <a href="#" class="home-title__filter-all home-title__filter-all-other">
+                            Tất cả
+                            <i class="home-title__filter-all-icon fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="home-playlist">
+                        <div class="grid__row">
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://afamilycdn.com/150157425591193600/2022/8/16/photo-1-16606282346111793475971-1660628992366-1660628992576235717948.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <a href="#" class="home-playlist__content-name">Tăng Duy Tân</a>
+                                        <span class="home-playlist__content-descript">
+                                            Với phong cách âm nhạc pha trộn giữa ballad, pop và rock, Tăng Duy Tân tạo nên những ca khúc độc đáo và sáng tạo, gây ấn tượng mạnh cho người nghe
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://i.scdn.co/image/ab6761610000e5ebfe01faba1b158583bfc75885);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <a href="#" class="home-playlist__content-name">Pháo</a>
+                                        <span class="home-playlist__content-descript">
+                                            Nhạc của Pháo pha trộn nhịp điệu rap và EDM, mang đến cho người nghe một trải nghiệm âm nhạc đầy màu sắc và sôi động
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://afamilycdn.com/150157425591193600/2021/7/10/batch100-1625885583156309544356.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <a href="#" class="home-playlist__content-name">HIEUTHUHAI</a>
+                                        <span class="home-playlist__content-descript">
+                                            HIEUTHUHAI được đánh giá là một trong những nghệ sĩ trẻ triển vọng của làng nhạc Việt Nam, với sự đầu tư và nỗ lực trong sự nghiệp âm nhạc, anh đang ngày càng được yêu thích và được đón nhận bởi khán giả
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://laplanhuocmo.com.vn/wp-content/uploads/2022/01/hoang-thuy-linh-xinh-dep-vay-den.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <a href="#" class="home-playlist__content-name">Hoàng Thùy Linh</a>
+                                        <span class="home-playlist__content-descript">
+                                            Hoàng Thùy Linh được đánh giá là một trong những nữ nghệ sĩ có ảnh hưởng lớn nhất đến nền âm nhạc Việt Nam hiện nay, với sự nỗ lực và tài năng của mình, cô đã và đang tạo ra sự khác biệt và góp phần làm phong phú hơn văn hóa âm nhạc của đất nước
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid__column-2-4">
+                                <div class="home-playlist__wrap">
+                                    <div class="home-playlist__play">
+                                        <a href="#" class="home-playlist__play-link">
+                                            <div class="home-playlist__play-img" style="background-image: url(https://dvt.vn/uploads/images/2022/09/14/mono-1-1663136362.jpg);"></div>
+                                            <div class="home-playlist__play-icon">
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-like fa-regular fa-heart"></i>
+                                                <i class="home-playlist__play-icon-item home-playlist__play-icon-play fa-regular fa-circle-play"></i> 
+                                                <span class="home-playlist__play-icon-item home-playlist__play-icon-more">...</span>
+                                            </div>
+                                        </a>                  
+                                    </div>
+
+                                    <div class="home-playlist__content">
+                                        <a href="#" class="home-playlist__content-name">MONO</a>
+                                        <span class="home-playlist__content-descript">
+                                            Tuy mới nổi nhưng MONO đã có nhiều bản nhạc được yêu thích và trở thành hiện tượng âm nhạc trên mạng xã hội, thể hiện sự tài năng và sáng tạo trong sự nghiệp âm nhạc
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-main">
+
+            <div class="grid ">
+                <div class="grid__row">
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__title">Thông Tin</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Giới Thiệu</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Tin Tức</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Chương Trình</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__title">Liên hệ</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-link-icon fa-solid fa-phone"></i>
+                                    0123456789
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-link-icon fa-solid fa-envelope"></i>
+                                    soundvibe@gmail.com
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-link-icon fa-solid fa-location-dot"></i>
+                                    Hòa Hải - Ngũ Hành Sơn - Đà Nẵng
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__title">Hỗ Trợ Khách Hàng</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Hướng Dẫn Sử Dụng</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Hỗ Trợ Về Thanh Toán</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Hỗ Trợ Về Quyền Riêng Tư Và An Toàn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__title">Theo Dõi</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-link-icon fa-brands fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-link-icon fa-brands fa-instagram"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">
+                                    <i class="footer__item-link-icon fa-brands fa-twitter"></i>
+                                    Twitter
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid__column-2-4">
+                        <h3 class="footer__title">Chính Sách & Điều Khoản</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Chính Sách Bảo Mật</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Chính Sách Sử Dụng</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="" class="footer__item-link">Chính Sách Quảng Cáo</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <span>Copyright © 2023 by SoundVibe</span>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
