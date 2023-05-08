@@ -1,0 +1,241 @@
+.modal {
+    position: fixed;
+    top: 60px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+}
+
+.form {
+    margin: auto;
+}
+
+.form-container {
+    display: flex;
+}
+
+.form__label {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 530px;
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+.form__label--img {
+    transform: rotate(45deg);
+    position: absolute;
+    top: 35%;
+    left: -20%;
+    animation: rocket 10s linear infinite;
+}
+
+@keyframes rocket {
+    0% {
+        left: -20%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+.form__label--content {
+    color: whitesmoke;
+    font-size: 6rem;
+    display: inline-block;
+    font-weight: 600;
+    margin: 8rem 0 2rem 5.5rem;
+    line-height: 30px;
+    cursor: default;
+    user-select: none;
+}
+
+.form__label--content-child {
+    text-align: left;
+    display: block;
+    margin: 15px 0 10rem 30rem;
+    font-size: 3.8rem;
+    color: var(--yellow);
+    font-family: 'Inika', serif;
+    font-weight: 900;
+}
+
+.form__label--icons-item{
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    bottom: 0;
+    transform: translateY(-15px);
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.form__info {
+    background-color: rgba(217, 217, 217, 0.1);
+    flex: 1;
+    min-width: 320px;
+    min-height: 453px;
+    padding: 2rem 5rem;
+    backdrop-filter: blur(10px);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.form__header {
+    display: flex;
+}
+
+.form__header h3 {
+    color: whitesmoke;
+    margin: 0.4rem auto 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 100;
+    cursor: default;
+    user-select: none;
+}
+
+.form__group--input {
+    width: 100%;
+    height: 4.8rem;
+    margin-top: 7px;
+    padding: 0 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1.7rem;
+    color: whitesmoke;
+    border: 1px solid #B69D9D;
+    background-color: transparent;
+    outline: none;
+}
+
+.form__group--input::placeholder {
+    color: var(--yellow);
+}
+
+.form__group--input:focus {
+    border: 2px solid #dfd9cf;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 30px 30px,
+        rgba(0, 0, 0, 0.12) 0px -12px 10px;
+}
+
+.form__group--input:focus::placeholder {
+    color: #dcc598;
+} 
+
+.form__forgot{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form__forgot--link{
+    margin: 14px 8px 0 0;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.form__control {
+    display: flex;
+    margin: 1rem;
+}
+
+.form__btn {
+    margin: 0.8rem auto 0;
+    font-size: 2.5rem;
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    color: whitesmoke;
+    background: linear-gradient(45deg,
+            #0b6b5b,
+            #2b6678,
+            #1a5a6e,
+            #164f60);
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.form__btn:hover {
+    cursor: pointer;
+    background: linear-gradient(45deg,
+            #164f60,
+            #1a5a6e,
+            #2b6678,
+            #0b6b5b);
+}
+
+.form__btn:active {
+    transform: translateY(1.5px);
+    box-shadow: none;
+}
+
+.form__or {
+    display: flex;
+}
+
+.form__or p {
+    margin: 1px auto 0.2px;
+    color: white;
+    font-size: 1.5rem;
+    cursor: default;
+    user-select: none;
+}
+
+.form__socials-item {
+    padding: 10px 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.form__socials-item:hover {
+    cursor: pointer;
+}
+
+.form__socials--fb {
+    background-color: #1877f2;
+}
+
+.form__socials--logo {
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+.form__socials--logo-fb {
+    position: relative;
+    bottom: 3px;
+}
+
+.form__socials--title {
+    margin: 0 25px;
+    font-size: 2rem;
+    user-select: none;
+}
+
+.form__socials--title-fb {
+    color: whitesmoke;
+}
+
+.form__socials--gg {
+    background-color: white;
+}
+
+.form__other{
+   display: flex;
+}
+
+.form__other p{
+    color: white;
+    font-size: 1.3rem;
+    margin: 1rem auto 0.8rem;
+    cursor: default;
+    user-select: none;
+}
+
+.form__other a{
+    color: white;
+    font-size: 1.3rem;
+}

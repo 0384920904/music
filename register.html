@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundVibe</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="register_login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Merriweather:wght@300;400;700&family=Roboto:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="grid">
+            <nav class="header__navbar">
+                <div class="header__left">
+                    <a href="./index.html" class="header__left-name">
+                        <h3>SoundVibe</h3>
+                    </a>
+                    <div class="header__left-search">
+                        <i class="fa-solid fa-magnifying-glass header__left-search--icon"></i>
+                        <input type="text" class="header__left-search--input" placeholder="Tìm kiếm">
+                    </div>
+                </div>
+                <div class="header-right">
+                    <ul class="header__right-list">
+                        <li class="header__right-item">
+                            <a href="home.html" class="header__right-item-link">
+                                <i class="fa-solid fa-house header__right-item-link--icon"></i>
+                                Trang chủ
+                            </a>
+                        </li>
+                        <li id="notification" class="header__right-item header__right-item--notify">
+                            <span class="header__right-item--notify-qtn">4</span>
+                            <i class="fa-sharp fa-regular fa-bell header__right-item-link--icon"></i>
+                            Thông báo
+                            <div id="notification__hide" class="header__notify">
+                                <header class="header__notify-header">
+                                    <img src="img/notify.png" alt="" class="header__notify-header--img">
+                                    <h3>Mới</h3>
+                                </header>
+                                <ul class="header__notify-list">
+                                    <li class="header__notify-item">
+                                        <img src="img/music.png" alt="" class="header__notify-item--img">
+                                        <div class="header__notify-item--content">
+                                            <span class="header__notify-item--content-big">Live events this week</span>
+                                            <span class="header__notify-item--content-small">Don't miss out on the
+                                                hottest concerts and festivals happening in your city, featuring top
+                                                performers and local talent.</span>
+                                        </div>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <img src="img/podcast.png" alt="" class="header__notify-item--img">
+                                        <div class="header__notify-item--content">
+                                            <span class="header__notify-item--content-big">Podcast highlights</span>
+                                            <span class="header__notify-item--content-small">Get to know your favorite
+                                                artists on a deeper level with exclusive interviews, behind-the-scenes
+                                                footage, and fan Q&A sessions.</span>
+                                        </div>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <img src="img/spotlight.png" alt="" class="header__notify-item--img">
+                                        <div class="header__notify-item--content">
+                                            <span class="header__notify-item--content-big">Artist spotlights</span>
+                                            <span class="header__notify-item--content-small">Don't miss out on the
+                                                hottest concerts and festivals happening in your city, featuring top
+                                                performers and local talent.</span>
+                                        </div>
+                                    </li>
+                                    <li class="header__notify-item">
+                                        <img src="img/medal.png" alt="" class="header__notify-item--img">
+                                        <div class="header__notify-item--content">
+                                            <span class="header__notify-item--content-big">The best of June</span>
+                                            <span class="header__notify-item--content-small">From catchy pop hits to
+                                                soulful ballads, we've got you covered with the latest and greatest
+                                                music releases of the month.</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <footer class="header__notify-footer">Thêm</footer>
+                            </div>
+                        </li>
+                        <li id="language"
+                            class="header__right-item header__right-item--language ">
+                            Tiếng Việt
+                            <i class="fa-solid fa-angle-down header__right-item-link--icon"></i>
+                            <div id="language__hide" class="header__language">
+                                <!-- check hide: header__language-list--check-hide -->
+                                <div class="header__language-list">
+                                    <i class="header__language-list--check fa-sharp fa-solid fa-check"></i>
+                                    <img src="img/vietnamese.png" alt="VietNam" class="header__language-list-img">
+                                    <h3 class="header__language-list-name">Tiếng Việt</h3>
+                                </div>
+                                <div class="header__language-list">
+                                    <i
+                                        class="header__language-list--check header__language-list--check-hide fa-sharp fa-solid fa-check"></i>
+                                    <img src="img/english.jpg" alt="English" class="header__language-list-img">
+                                    <h3 class="header__language-list-name">English</h3>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__right-item">
+                            <a href="https://www.tiktok.com" target="_blank" class="header__right-item-link">
+                                <i class="fa-brands fa-tiktok header__right-item-link--icon header__right-item-link-social"></i>
+                            </a>
+                        </li>
+                        <li class="header__right-item header__right-item--space">
+                            <a href="https://www.instagram.com" target="_blank" class="header__right-item-link">
+                                <i class="fa-brands fa-instagram header__right-item-link--icon header__right-item-link-social"></i>
+                            </a>
+                        </li>
+                        <li class="header__right-item">
+                            <a href="login.html" class="header__right-item-link">
+                                <i class="fa-solid fa-right-to-bracket header__right-item-link--icon"></i>
+                                Đăng nhập
+                            </a>
+                        </li>
+                        <li class="header__right-item ">
+                            <a href="register.html" class="header__right-item-link">
+                                <button class="header__right-item-link--join-btn">Join</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="form">
+            <div class="form-container">
+                <img src="img/200w.webp" alt="" class="form__label--img">
+                <div class="form__label">
+                    <h3 class="form__label--content">
+                        Welcome to
+                    </h3>
+                    <span class="form__label--content-child">SoundVibe</span>
+                    <img src="img/audio.webp" alt="" class="form__label--icons-item">
+                </div>
+
+                <div class="form__info">
+                    <div class="form__header">
+                        <h3>Register</h3>
+                    </div>
+
+                    <div class="form__form">
+                        <div class="form__group">
+                            <input type="text" class="form__group--input" placeholder="Username">
+                        </div>
+                        <div class="form__group">
+                            <input type="password" class="form__group--input" placeholder="Password">
+                        </div>
+                        <div class="form__group">
+                            <input type="password" class="form__group--input" placeholder="Confirm password">
+                        </div>
+                    </div>
+
+                    <div class="form__control">
+                        <button class="form__btn">Sign up</button>
+                    </div>
+
+                    <div class="form__or">
+                        <p>or</p>
+                    </div>
+
+                    <div class="form__socials">
+                        <div class="form__socials-item form__socials--gg">
+                            <img src="img/google-logo.png" alt="Google" class="form__socials--logo">
+                            <span class="form__socials--title">Google</span>
+                        </div>
+                        <div class="form__socials-item form__socials--fb">
+                            <img src="img/Facebook-logo.png" alt="Facebook"
+                                class="form__socials--logo form__socials--logo-fb">
+                            <span class="form__socials--title form__socials--title-fb">Facebook</span>
+                        </div>
+                    </div>
+
+                    <div class="form__other">
+                        <p>You already have SoundVibe account? <a href="login.html">Login here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="main.js"></script>
+
+</html>
