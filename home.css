@@ -747,6 +747,10 @@ body {
     padding: 11px 11px 10px;
 }
 
+.home-playlist__play-icon-like.fa-solid.fa-heart{
+    color: rgb(247, 60, 60);
+}
+
 .home-playlist__play-icon-play {
     font-size: 4.8rem;
     font-weight: 100;
