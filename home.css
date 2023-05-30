@@ -70,7 +70,7 @@ body {
     margin: 0 auto;
 }
 
-.grid-footer{
+.grid-footer {
     max-width: 100%;
     width: 1250px;
     margin: 0 auto;
@@ -475,13 +475,13 @@ body {
 }
 
 .home-poster__link:hover .home-poster__link-img {
-    transform: scale(1.08);
+    transform: scale(1.03);
 }
 
 .home-poster__link-img {
     object-fit: cover;
     width: 100%;
-    height: 250px; 
+    height: 250px;
     border-radius: 10px;
     transition: 0.15s transform linear;
 }
@@ -573,6 +573,7 @@ body {
     align-items: center;
     padding: 6px 12px;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .home-new-song__wrap:hover {
@@ -631,6 +632,7 @@ body {
     height: 60px;
     margin-left: 10px;
     max-width: 65%;
+    flex: 1;    
 }
 
 .home-new-song__content-title {
@@ -668,9 +670,7 @@ body {
     user-select: none;
 }
 
-.home-new-song__more {
-    flex: 1;
-}
+.home-new-song__more {}
 
 .home-new-song__more-link {
     text-decoration: none;
@@ -747,7 +747,7 @@ body {
     padding: 11px 11px 10px;
 }
 
-.home-playlist__play-icon-like.fa-solid.fa-heart{
+.home-playlist__play-icon-like.fa-solid.fa-heart {
     color: rgb(247, 60, 60);
 }
 
@@ -886,17 +886,13 @@ body {
     color: white;
 }
 
-.footer{
-    
-}
-
-.footer-main{
-    background-color: rgba(0,0,0,0.6);
+.footer-main {
+    background-color: rgba(0, 0, 0, 0.6);
     margin-top: 80px;
     padding: 20px 0;
 }
 
-.footer__title{
+.footer__title {
     color: rgb(236, 236, 236);
     font-weight: 500;
     font-size: 1.5rem;
@@ -905,39 +901,188 @@ body {
     padding: 0 0 8px;
 }
 
-.footer__list{
+.footer__list {
     list-style: none;
     padding: 0;
 }
 
-.footer__item{
+.footer__item {
     margin: 15px 0;
 }
 
-.footer__item-link{
+.footer__item-link {
     text-decoration: none;
     font-size: 1.3rem;
     color: rgb(151, 150, 150);
 }
 
-.footer__item-link-icon{
+.footer__item-link-icon {
     font-size: 1.4rem;
     margin-right: 5px;
 }
 
-.footer__item-link:hover{
+.footer__item-link:hover {
     color: var(--yellow);
 }
 
-.footer-copyright{
-    background-color: rgba(0,0,0,0.78);
+.footer-copyright {
+    background-color: rgba(0, 0, 0, 0.78);
     padding: 20px 30px;
+    user-select: none;
 }
 
-.footer-copyright span{
+.footer-copyright span {
     text-align: center;
     color: white;
     display: block;
     font-size: 1.3rem;
     font-weight: 100;
+}
+
+/* Player */
+
+.player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(20, 30, 30, 0.8);
+    z-index: 9999999;
+    border-top: 1px solid rgb(89, 89, 89);
+    backdrop-filter: blur(10px);
+    display: none;
+}
+
+.player .icon-pause {
+    display: none;
+}
+
+.player.playing .icon-pause {
+    display: inline-block;
+}
+
+.player.playing .icon-play {
+    display: none;
+}
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 6px 0 20px;
+}
+
+.dashboard header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h2 {
+    color: rgb(205, 205, 205);
+    font-size: 2rem;
+    margin: 10px 0 3px;
+    font-weight: 500;
+    user-select: none;
+}
+
+header p {
+    color: rgb(134, 134, 134);
+    font-size: 13px;
+    margin: 5px 0;
+    user-select: none;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.control {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 16px 0 10px 0;
+}
+
+.control .btn i {
+    font-size: 2rem;
+    color: #c9c9c9;
+    padding: 8px;
+}
+
+.control .btn {
+    padding: 0;
+    margin: 0 15px 4px;
+}
+
+.player .icon-pause {
+    display: none;
+}
+
+.progress {
+    width: 45%;
+    -webkit-appearance: none;
+    height: 4px;
+    background: #e8e8e8;
+    outline: none;
+    opacity: 0.8;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.progress:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: var(--yellow);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.btn.btn-toggle-play {
+    background-color: var(--yellow);
+    border-radius: 50%;
+    padding: 10px 15px;
+}
+
+.btn.btn-toggle-play i {
+    font-size: 30px;
+}
+
+.control .btn i.active {
+    color: var(--yellow);
+}
+
+.cd {
+    position: fixed;
+    margin: auto;
+    width: 140px;
+    left: 450px;
+    top: 24px;
+}
+
+.cd-thumb {
+    width: 80%;
+    padding-top: 80%;
+    border-radius: 50%;
+    background-color: #333;
+    background-size: cover;
+    margin: auto;
+    background-position: center;
+}
+
+.player_exit i{
+    position: fixed;
+    color: #c9c9c9;
+    right: 460px;
+    font-size: 25px;
+    top: 30px;
+    cursor: pointer;
 }
