@@ -748,7 +748,7 @@ body {
 }
 
 .home-playlist__play-icon-like.fa-solid.fa-heart {
-    color: rgb(247, 60, 60);
+    color: var(--yellow);
 }
 
 .home-playlist__play-icon-play {
